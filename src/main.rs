@@ -60,7 +60,7 @@ async fn main() -> std::io::Result<()> {
         .service(actividad_id)
         .service(borrar_actividad)
     )
-        .bind(("0.0.0.0",8080))?
+        .bind(("0.0.0.0",5050))?
         .run()
         .await 
 }
