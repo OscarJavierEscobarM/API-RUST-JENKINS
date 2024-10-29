@@ -8,5 +8,5 @@ echo "EXPOSE 5050" >> Dockerfile
 echo 'CMD ["/tmp/app/target/release/actividades-api"]' >> Dockerfile
 
 docker build . -t actividades-extraescolares-api
-docker run --rm -p 5050:5050 actividades-extraescolares-api
+docker run --rm -d -p 5050:5050 actividades-extraescolares-api
 docker ps -a 
